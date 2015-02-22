@@ -137,15 +137,15 @@ public class ArrayListInt
        */
       public int indexOf(int elemento)
       {
-          boolean exit=false;
+          boolean out=false;
           int number = -1;
           int index=0;
-          while(index < numbers.length  && exit = false)
+          while(index < numbers.length  && out == false)
           {
               if(numbers[index]==elemento)
               {
                 number = numbers[index];
-                exit = true;
+                out = true;
               }
              
               index++;
@@ -185,6 +185,10 @@ public class ArrayListInt
            return numero;
        }
        
+       /**
+        * tamaño de la lista
+        */
+
        public int size()
        {
            int tamaño= numbers.length;
